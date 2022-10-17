@@ -10,11 +10,8 @@
   gap: 2.5em;
 }
 
-button {
-  width: 11em;
-  height: 11em;
-}
-
-img {
+button > img {
   margin: 1.2em;
+  width: 10em;
+  height: 10em;
 }
