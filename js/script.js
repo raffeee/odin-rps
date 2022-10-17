@@ -61,3 +61,11 @@ function game() {
     ? `Winner: Player!`
     : `Winner: Computer!`
 }
+
+const choices = document.querySelectorAll('.choice')
+
+choices.forEach(option => {
+  option.addEventListener('click', () => {
+    playRound(option.id, getComputerChoice());
+  });
+})
