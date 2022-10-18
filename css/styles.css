@@ -1,3 +1,10 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #title {
   margin: 1em 0;
   text-align: center;
@@ -6,6 +13,7 @@
 }
 
 #choices {
+  margin: 1em 0;
   display: flex;
   justify-content: center;
   gap: 2.5em;
@@ -15,4 +23,52 @@ button > img {
   margin: 1.2em;
   width: 10em;
   height: 10em;
+}
+
+#scoreboard {
+  margin: 1.2em;
+  height: 12em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1em;
+  border: 2px solid black;
+}
+
+.left,
+.center,
+.right {
+  margin: 1.2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+}
+
+.left,
+.right {
+  width: 8em;
+  height: 8em;
+}
+
+.center {
+  height: 8em;
+  width: 25em;
+  flex: 2;
+}
+
+.score {
+  font-size: 6em;
+}
+
+.result {
+  font-size: 1.75em;
+  text-align: center;
+}
+
+.result,
+.score,
+.label {
+  font-family: sans-serif;
 }
